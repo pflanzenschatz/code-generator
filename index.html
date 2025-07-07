@@ -4,14 +4,34 @@
   <meta charset="UTF-8">
   <title>Ihr persönlicher Code</title>
   <style>
-    body { font-family: sans-serif; text-align: center; padding: 50px; }
-    h1 { font-size: 3em; color: #2b7a78; }
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      font-size: 3em;
+      color: #2b7a78;
+    }
+    .info {
+      font-size: 1.2em;
+      max-width: 600px;
+      margin: 20px auto;
+      color: #333;
+    }
   </style>
 </head>
 <body>
   <h2>Vielen Dank für Ihre Teilnahme!</h2>
   <p>Ihr persönlicher Code lautet:</p>
   <h1 id="code"></h1>
+
+  <div class="info">
+    Sie erhalten <strong>50 % Rabatt</strong> auf Ihren nächsten Einkauf.  
+    <br><br>
+    Nach dem Kauf schicken Sie uns einfach diesen Code –  
+    wir erstatten Ihnen <strong>die 50 % zurück</strong>.
+  </div>
 
   <script>
     const code = Math.random().toString(36).substring(2, 10).toUpperCase();
