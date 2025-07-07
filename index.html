@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Ihr persönlicher Code</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; padding: 50px; }
+    h1 { font-size: 3em; color: #2b7a78; }
+  </style>
+</head>
+<body>
+  <h2>Vielen Dank für Ihre Teilnahme!</h2>
+  <p>Ihr persönlicher Code lautet:</p>
+  <h1 id="code"></h1>
+
+  <script>
+    const code = Math.random().toString(36).substring(2, 10).toUpperCase();
+    document.getElementById("code").innerText = code;
+  </script>
+</body>
+</html>
